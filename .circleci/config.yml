@@ -18,11 +18,11 @@ jobs:
       - checkout
       - docker/check
       - docker/build:
-          image: << parameters.image >>
-          tag: << parameters.tag >>
+          image: torhathaway/passing_thoughts
+          tag: latest
       - docker/push:
-          image: << parameters.image >>
-          tag: << parameters.tag >>
+          image: torhathaway/passing_thoughts
+          tag: latest
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
