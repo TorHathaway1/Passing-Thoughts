@@ -15,7 +15,7 @@ export default function App() {
     },
     {
       id: generateId(),
-      text: "They'll be removed after 15 seconds.",
+      text: "They'll be removed after 10 seconds.",
       expiresAt: getNewExpirationTime(),
     },
   ]);
