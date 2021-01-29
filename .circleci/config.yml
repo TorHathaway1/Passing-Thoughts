@@ -4,15 +4,6 @@ orbs:
 jobs:
   build-and-push:
     executor: docker/docker
-    parameters:
-      image:
-        description: |
-          Name of docker image with organization
-        type: string
-      tag:
-        description: |
-          Docker image tag
-        type: string
     steps:
       - setup_remote_docker
       - checkout
